@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body> <!-- action은 url이다.맞춰주기 -->
+   <form action="post" method="post"> <!-- 메서드=포스트방식으로 요청했으니까 포스트메서드클래스에서포스트방식을 탄다 -->
+      <input type="submit" value="post">
+   </form>
+<hr> 
+  <form action="circleArea" method="post"> <!-- circleArea에있는post함수를 타 -->
+      반지름: <input type="text" name = "circle" value="10">
+      <input type="submit" value="전송"> <!-- 받은 값은 circleArea의 post객체의 request에 다 저장됨 -->
+   </form>
+<hr> 
+     <form action="rectangleServelet" method="post"> 
+     가로: <input type="text" name = "width" value="10">
+    세로: <input type="text" name = "height" value="10">
+      <input type="submit" value="전송">
+      
+<hr> 
+     <form action="gradeServelet" method="post"> 
+     국어: <input type="text" name = "kor" value="80">
+    수학: <input type="text" name = "eng" value="90">
+    영어:<input type="text" name = "math" value="90">
+      <input type="submit" value="전송">
+   
+
+</body>
+</html>
