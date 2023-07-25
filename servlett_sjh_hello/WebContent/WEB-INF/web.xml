@@ -9,4 +9,17 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <context-param>
+     <param-name>id</param-name>
+     <param-value>abcd</param-value>
+  </context-param>
+  
+  <context-param>
+     <param-name>pw</param-name>
+     <param-value>1234</param-value>
+  </context-param>
+  
+  <listener-class>edu.global.ex.contextListenerEX</listener-class><!--  //내가 만든 리스너 등록 -->
+  
 </web-app>
