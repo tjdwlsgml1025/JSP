@@ -1,3 +1,4 @@
+<%@page import="edu.global.ex.Circle"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -7,11 +8,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>a.jsp입니다.</h1>
 <%
-	String str = request.getParameter("age");
-	int age = Integer.valueOf(str);
+ 	Circle circle = (Circle) session.getAttribute("circle");
+	out.println(circle.getArea());
+
 %>
-<h1><%=age %>미성년자입니다. 주류 판매 불가능</h1>
+
 
 </body>
 </html>

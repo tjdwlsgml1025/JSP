@@ -8,6 +8,10 @@
 </head>
 <body>
 
+<h1> 인클루드를 합니다</h1> 
+<jsp:include page="include01.jsp"/> <!-- 현재페이지에 포함시키는 것 -->
+<h1> 인클루드가 되었습니다</h1>
+
 
 <%
 //내장객체
@@ -18,7 +22,7 @@ out.print("겟방식포스트방식"+request.getMethod()+"<br>");
 
 out.print("컨택스트 패스"+request.getContextPath()+"<br>"); //프로젝트경로
 out.print("URL패스 "+request.getRequestURL()+"<br>"); //url절대주소
-out.print("URI패스"+request.getRequestURI()+"<br>"); //파일주소
+out.print("URI패스"+request.getRequestURI()+"<br>"); //식별주소(톰캣이 구분할 때 쓰는)
 
 %>
 

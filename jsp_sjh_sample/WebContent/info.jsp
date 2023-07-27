@@ -1,5 +1,9 @@
+<%@page import="edu.global.ex.Circle"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%-- <%@ page errorPage="errorPage.jsp" %><!--  페이지 지시자 : 에러나면 여기로 보냄/forward가됨 -->
+ --%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +12,9 @@
 </head>
 <body>
 <%
-	String str = request.getParameter("age");
-	int age = Integer.valueOf(str);
+	int i = 40 / 0;
 %>
-<h1><%=age %>미성년자입니다. 주류 판매 불가능</h1>
+
 
 </body>
 </html>
