@@ -13,7 +13,6 @@
 <body>
 	<%
 		DeptCpDao dao = new DeptCpDao();
-
 		List<DeptDto> dtos = dao.getDepts();
 
 		//자바에서 데이터값 넣어서 실행시키기
